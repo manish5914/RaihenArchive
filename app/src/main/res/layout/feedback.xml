@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_custom">
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:value="0"
+        android:valueFrom="0"
+        android:valueTo="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:thumbColor="@color/white"
+        app:trackHeight="10dp"
+        app:labelBehavior="gone"/>
+
+    <TextView
+        android:id="@+id/listEnd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="We Really Appreciate Your Feedback"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1" />
+
+
+    <ImageView
+        android:id="@+id/full_star1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_star_full"
+        app:layout_constraintBottom_toTopOf="@+id/slider"
+        app:layout_constraintEnd_toStartOf="@+id/full_star2"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintVertical_bias="0.506"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+    <ImageView
+        android:id="@+id/half_star1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_star_half"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/slider"
+        app:layout_constraintEnd_toStartOf="@+id/full_star2"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintVertical_bias="0.506"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+    <ImageView
+        android:id="@+id/full_star2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_star_full"
+        app:layout_constraintBottom_toTopOf="@+id/slider"
+        app:layout_constraintEnd_toStartOf="@+id/full_star3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/full_star1"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintVertical_bias="0.506"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+    <ImageView
+        android:id="@+id/half_star2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_star_half"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/slider"
+        app:layout_constraintEnd_toStartOf="@+id/full_star3"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/full_star1"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintVertical_bias="0.506"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+    <ImageView
+        android:id="@+id/full_star3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_star_full"
+        app:layout_constraintEnd_toStartOf="@+id/full_star4"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/full_star2"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+    <ImageView
+        android:id="@+id/half_star3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_star_half"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/full_star4"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/full_star2"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+
+    <ImageView
+        android:id="@+id/full_star4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_star_full"
+        app:layout_constraintEnd_toStartOf="@+id/full_star5"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/full_star3"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+    <ImageView
+        android:id="@+id/half_star4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_star_half"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/full_star5"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/full_star3"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+
+    <ImageView
+        android:id="@+id/full_star5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_star_full"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/full_star4"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+    <ImageView
+        android:id="@+id/half_star5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="38dp"
+        android:src="@drawable/ic_star_half"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/full_star4"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.20"
+        app:tint="@color/gold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="1dp"
+        android:text="Feedback Details:"
+        android:textColor="@color/cyan"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/feedbackinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider"
+        app:layout_constraintWidth_percent="1" />
+
+    <EditText
+        android:id="@+id/feedbackinfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:gravity="bottom"
+        android:hint="Tap here to start typing "
+        android:inputType="textMultiLine"
+        android:textColor="#D8CDCD"
+        android:textColorHint="#D8CDCD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintWidth_percent="1" />
+
+    <Button
+        android:id="@+id/cancel_fb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/cyan"
+        android:text="Cancel"
+        android:textColor="@color/black_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackinfo"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.30" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/cyan"
+        android:text="Submit"
+        android:textColor="@color/black_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.07"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/cancel_fb"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackinfo"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.30" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

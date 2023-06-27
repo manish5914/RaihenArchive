@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_custom">
+
+    <TextView
+        android:id="@+id/listEnd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="85dp"
+        android:layout_height="658dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="4dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
+        app:layout_constraintHeight_percent="0.50"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="MissingConstraints">
+
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="26dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_fingerprint"
+            app:layout_constraintHeight_percent="0.50"
+            app:layout_constraintWidth_percent="0.20"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_about"
+            app:layout_constraintHeight_percent="0.50"
+            app:layout_constraintWidth_percent="0.20"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_feedback"
+            app:layout_constraintHeight_percent="0.50"
+            app:layout_constraintWidth_percent="0.20"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="212dp"
+        android:layout_height="658dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintHeight_percent="0.50"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="127dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="26dp"
+            android:text="Biometrics"
+            android:textColor="@color/cyan"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintWidth_percent="0.50" />
+
+        <TextView
+            android:id="@+id/about_us"
+            android:layout_width="127dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="45dp"
+            android:text="About us"
+            android:textColor="@color/cyan"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintWidth_percent="0.50" />
+
+        <TextView
+            android:id="@+id/feedback"
+            android:layout_width="127dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="45dp"
+            android:text="Feedback"
+            android:textColor="@color/cyan"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintWidth_percent="0.50" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="101dp"
+        android:layout_height="658dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.50"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/listEnd"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="MissingConstraints">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="66dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/toggle"
+            android:checked="false" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/speak"
+        android:layout_width="75dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="68dp"
+        android:src="@drawable/ic_help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

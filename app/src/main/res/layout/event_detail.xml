@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_custom">
+
+    <ImageView
+        android:id="@+id/event_color"
+        android:layout_width="5dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001"
+        app:srcCompat="@drawable/circle" />
+
+    <LinearLayout
+        android:id="@+id/list"
+        android:layout_width="407dp"
+        android:layout_height="97dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001">
+
+        <TextView
+            android:id="@+id/eveName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingStart="60sp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/eveType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="start"
+            android:paddingLeft="60sp"
+            android:text="TextView"
+            android:textColor="#7E7E7E"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/eveDesc"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="start"
+            android:maxLines="6"
+            android:paddingStart="60sp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

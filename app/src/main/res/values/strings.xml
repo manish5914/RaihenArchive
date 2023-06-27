@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">RaihenV2</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_home">Home</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+    <string name="submit">Submit</string>
+    <string name="seppuku_counter">SEPPUKU COUNTER:</string>
+    <string name="set_preffered_color">SET PREFFERED COLOR</string>
+    <string name="friends">FRIENDS</string>
+    <string name="check_notification_log">CHECK NOTIFICATION LOG</string>
+    <string name="notification_setting">NOTIFICATION SETTING</string>
+    <string name="username">Username:</string>
+    <string name="log_in">Go to Sign Up</string>
+    <string name="sign_up">Go to Log In</string>
+    <string name="password">Password:</string>
+    <string name="username_here">Username here</string>
+    <string name="password_here">Password here</string>
+    <string name="email">Email:</string>
+    <string name="email_here">Email here</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="title_activity_kalender">Kalender</string>
+    <string name="title_activity_kalender_fragment">KalenderFragment</string>
+
+    <string-array name="event_types">
+        <item>Event</item>
+        <item>Assignment</item>
+        <item>Homework</item>
+    </string-array>
+
+    <string-array name="ehh">
+        <item>Wow, its so empty</item>
+        <item>Go, do some work, you little piece of…something</item>
+        <item>So, you know there is a friend section?</item>
+        <item>Stahp, Get some friends</item>
+        <item>Did you know? You can click on the profile picture in your profile to change the profile</item>
+        <item>So no events huh? First time?</item>
+        <item>Let me tell you a story there once was a someone who did not have friends. Do you know their name?</item>
+        <item>Shu is a lazy person with no friends and somehow even he has events. Imagine!!</item>
+        <item>Aight mah dude at this point i will give you a tip. There is a seppuku counter in the navigation drawer spam that like… i mean seppuku button.</item>
+        <item>Bonk! Go to no friend jail</item>
+        <item>Silence wench. I do not wish to be empty anymore i just want to have events</item>
+        <item>Dood get events quick....\nTIKA is coming\nRUN!!!!!!!!!!</item>
+        <item>Well i warned you here she comes</item>
+        <item>Wanna play some games dude?-Tika</item>
+        <item>If tika ask you to play league with her\n NO!</item>
+        <item>Either get some events or give up on your dreams and die\n-Shu</item>
+        <item>If you don\'t want Tika to get her hands on you OR your time for league. GET DHEM EVENTS and FAST!!</item>
+
+    </string-array>
+</resources>

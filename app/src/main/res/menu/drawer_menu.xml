@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            tools:ignore="HardcodedText" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_calendar"
+            android:title="Calendar"
+            tools:ignore="HardcodedText" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/ic_schedule"
+            android:title="Schedule"
+            tools:ignore="HardcodedText" />
+    </group>
+    <item
+        android:title="You Okay?"
+        tools:ignore="HardcodedText">
+        <menu>
+            <item
+                android:id="@+id/nav_seppuku"
+                android:icon="@drawable/ic_seppuku"
+                android:title="Commit Seppuku"
+                tools:ignore="HardcodedText" />
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_flappy"
+                android:icon="@drawable/ic_game"
+                android:title="Game"
+                tools:ignore="HardcodedText" />
+            </group>
+
+        </menu>
+    </item>
+
+    <item
+        android:title="System"
+        tools:ignore="HardcodedText">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings"
+                tools:ignore="HardcodedText" />
+            </group>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_signout"
+                android:title="Sign Out"
+                tools:ignore="HardcodedText" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_close"
+                android:title="Exit"
+                tools:ignore="HardcodedText" />
+
+        </menu>
+    </item>
+</menu>
